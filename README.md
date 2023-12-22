@@ -24,4 +24,7 @@ Lombok Developer Tools
 Thymeleaf Template Engines
 OAuth2 Client Security : Spring Boot integration for Spring Security's OAuth2/OpenID Connect client features.
 
+4 - Création d'une application FrontEnd ANGULAR.
+
+
 
