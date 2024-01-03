@@ -1,4 +1,4 @@
-package org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.ports.match;
+package org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.ports.match.primary;
 
 import org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.match.Equipe;
 import org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.match.Match;
