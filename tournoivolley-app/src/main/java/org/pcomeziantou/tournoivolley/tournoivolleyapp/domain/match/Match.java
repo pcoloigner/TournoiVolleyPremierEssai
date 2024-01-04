@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.UUID;
 
 public class Match {
-    UUID matchId;
+    UUID id;
     Equipe equipeUn;
     Equipe equipeDeux;
     Equipe arbitre;
@@ -29,6 +29,10 @@ public class Match {
 
     }
 
+    public UUID getId(){
+        return id;
+    }
+    
     public boolean isMatchEnCours(){
         return true;
     }
@@ -39,6 +43,22 @@ public class Match {
 
     public boolean isMatchCommence(){
         return false;
+    }
+
+    public TypeMatchFin getTypeMatchFin() {
+        return typeMatchFin;
+    }
+
+    public TypeMatchNbPointsFinSet getTypeMatchNbPointsFinSet() {
+        return typeMatchNbPointsFinSet;
+    }
+
+    public TypeMatchNombreSetGagnants getTypeMatchNombreSetGagnants() {
+        return typeMatchNombreSetGagnants;
+    }
+
+    public List<Set> getSets() {
+        return sets;
     }
 
 

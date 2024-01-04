@@ -5,7 +5,7 @@ import org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.ports.match.primar
 public class CreateurMatch implements CreerUnMatch{
 
     //Pour coller à l'exemple de StarShip, même si ici, ça ne colle pas tout à fait, fonctionnellement.
-    MatchInventory MatchInventory;
+    //MatchInventory MatchInventory;
 
     @Override
     public Match creerMatch(Equipe equipe1, Equipe equipe2, Equipe arbitre, TypeMatchFin typeFin,
