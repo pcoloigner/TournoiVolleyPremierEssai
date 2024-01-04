@@ -1,4 +1,4 @@
-package org.pcomeziantou.tournoivolley.tournoivolleyapp;
+package org.pcomeziantou.tournoivolley.tournoivolleyapp.infra;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
