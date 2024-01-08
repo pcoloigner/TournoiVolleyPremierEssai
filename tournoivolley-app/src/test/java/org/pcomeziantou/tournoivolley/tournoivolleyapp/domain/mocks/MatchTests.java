@@ -1,7 +1,5 @@
 package org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.mocks;
 
-import java.util.UUID;
-
 import org.junit.jupiter.api.Test;
 import org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.match.CreateurMatch;
 import org.pcomeziantou.tournoivolley.tournoivolleyapp.domain.match.Equipe;
@@ -43,28 +41,24 @@ public class MatchTests {
         
         org.junit.jupiter.api.Assertions.assertTrue( true );
 
-        //EnregistrerUnMach enregistrerUnMach;
-        UUID uid = new UUID(8, 8);
-        //enregistrerUnMach.enregistrerUnMatch(match, null);
-        
         InMemoryMatchs matchs = new InMemoryMatchs();
-        matchs.save(match);
+        Match ms = matchs.save(match);
 
-        Match matchLu = matchs.getById(uid);
+        Match matchLu = matchs.getById(ms.getId());
         
         org.junit.jupiter.api.Assertions.assertTrue( true );
 
-        // org.junit.jupiter.api.Assertions.assertTrue( 
-        //     TypeMatchFin.FIN_DEUX_POINTS_D_ECART.equals( matchLu.getTypeMatchFin() )
-        // );
+        org.junit.jupiter.api.Assertions.assertTrue( 
+            TypeMatchFin.FIN_SEC.equals( matchLu.getTypeMatchFin() )
+        );
 
-        // org.junit.jupiter.api.Assertions.assertTrue( 
-        //     TypeMatchNbPointsFinSet.FIN_21_POINTS.equals( matchLu.getTypeMatchNbPointsFinSet() )
-        // );
+        org.junit.jupiter.api.Assertions.assertTrue( 
+            TypeMatchNbPointsFinSet.FIN_21_POINTS.equals( matchLu.getTypeMatchNbPointsFinSet() )
+        );
 
-        // org.junit.jupiter.api.Assertions.assertTrue( 
-        //     TypeMatchNombreSetGagnants.UN_SET.equals( matchLu.getTypeMatchNombreSetGagnants() )
-        // );
+        org.junit.jupiter.api.Assertions.assertTrue( 
+            TypeMatchNombreSetGagnants.UN_SET.equals( matchLu.getTypeMatchNombreSetGagnants() )
+        );
 
     }
 }

@@ -18,6 +18,7 @@ public class Match {
     
     public Match(Equipe equipe1, Equipe equipe2, Equipe arbitre, TypeMatchFin typeFin,
             TypeMatchNbPointsFinSet nbPointsFin, TypeMatchNombreSetGagnants nbSets) {
+                this.id = UUID.randomUUID();
                 this.equipeUn = equipe1;
                 this.equipeDeux = equipe2;
                 this.arbitre = arbitre;
